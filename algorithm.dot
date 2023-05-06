@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="age <= 22.5\ngini = 0.781\nsamples = 16\nvalue = [3, 5, 3, 2, 3]\nclass = Exploration", fillcolor="#ebfbe1"] ;
+1 [label="gender <= 0.5\ngini = 0.656\nsamples = 8\nvalue = [0, 0, 3, 2, 3]\nclass = FPS", fillcolor="#ffffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 15.5\ngini = 0.48\nsamples = 5\nvalue = [0, 0, 3, 2, 0]\nclass = FPS", fillcolor="#bdf6ec"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 2, 0]\nclass = Horror", fillcolor="#3c39e5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0]\nclass = FPS", fillcolor="#39e5c5"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 3]\nclass = Mobile_Game", fillcolor="#e539c0"] ;
+1 -> 5 ;
+6 [label="gender <= 0.5\ngini = 0.469\nsamples = 8\nvalue = [3, 5, 0, 0, 0]\nclass = Exploration", fillcolor="#caf5b0"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]\nclass = Exploration", fillcolor="#7be539"] ;
+6 -> 7 ;
+8 [label="age <= 33.0\ngini = 0.48\nsamples = 5\nvalue = [3, 2, 0, 0, 0]\nclass = Board_Game", fillcolor="#f6d5bd"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0]\nclass = Board_Game", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0]\nclass = Exploration", fillcolor="#7be539"] ;
+8 -> 10 ;
+}
